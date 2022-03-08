@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.tile38'
+version = '1.0.0'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.lettuce:lettuce-core:5.2.2.RELEASE'
+}
