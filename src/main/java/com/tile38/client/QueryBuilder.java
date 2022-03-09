@@ -9,6 +9,14 @@ public class QueryBuilder<S extends CommandSET, U extends CommandFSET> {
     S commandSave;
     U commandUpdate;
 
+    public QueryBuilder() {
+    }
+
+    public QueryBuilder(S commandSave, U commandUpdate) {
+        this.commandSave = commandSave;
+        this.commandUpdate = commandUpdate;
+    }
+
     public S track() {
         return commandSave;
     }
